@@ -8,4 +8,3 @@ function sumArray(numbers) {
 }
 const total = sumArray([1, 2, 3, 4, 5]);
 //# sourceMappingURL=getSum.js.map
-console.log(total);
