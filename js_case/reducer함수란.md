@@ -27,7 +27,7 @@ const cartReducer = (state = initialState, action) => {
 ```
 
 * State 
-    state는 당신이 만든 component들과 함께 동작하는 데이타이다. state는 component가 요구하는 
+    * state는 당신이 만든 component들과 함께 동작하는 데이타이다. state는 component가 요구하는 
     데이터를 지니고(hold)있으며, component가 rendering 하는 것을 좌우한다. 
     --(역으로 redering 만으로 state를 바꿀 수 없다.) 
     state object가 바뀌면, component는 re-redering한다. 어플리케이션을 Redux로 관리하는 경우, 

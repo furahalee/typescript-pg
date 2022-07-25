@@ -4,5 +4,6 @@
  * 함수의 매개변수를 선언할 때  필수 매개변수를 먼저 지정하고 선택적 매개변수를 뒤에 추가한다.
  */
 function log(message: string, userId?: string) {
-  let time = new Date();
+  let time = new Date().toLocaleDateString();
+  console.log(time, message, userId || 'Not Signed in' );
 }
