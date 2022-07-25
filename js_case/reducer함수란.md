@@ -56,9 +56,9 @@ const action = {
 }
 ```
 
-    * 위의 코드는 유저가 보내는 값을 담고있는 전형적인 payload를 나타낸다. 위의 코드에서 알 수 있듯, 
-    action object는 액션의 type과 payload object를 담고 있다. 그것들은 이 특정 action이 실행되기 
-    위한 필수 요소이다.
+  * 위의 코드는 유저가 보내는 값을 담고있는 전형적인 payload를 나타낸다. 위의 코드에서 알 수 있듯, 
+  action object는 액션의 type과 payload object를 담고 있다. 그것들은 이 특정 action이 실행되기 
+  위한 필수 요소이다.
 
 
 ## reducer를 사용하여 state 업데이트 하기 
