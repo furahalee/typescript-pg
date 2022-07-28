@@ -127,4 +127,9 @@ export default function (state = initialState, action) {
   default: 
     return state;
   }
+}
 ```
+
+
+* 위의 코드에서, 
+
