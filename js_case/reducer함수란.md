@@ -62,3 +62,40 @@ const action = {
 
 
 ## reducer를 사용하여 state 업데이트 하기 
+
+* 아래의 숫자 증감 counter를 살펴보자 
+
+```JS
+const increaseAction = {
+  type: 'INCREASE',
+}; 
+
+const decreaseAction = {
+  type: 'DECREASE'
+}; 
+
+
+const countReducer = (state = 0, action) => {
+  switch(action.type){
+  case INCREASE: 
+    return state + 1;
+
+  case DECREASE : 
+    return state -1;
+
+  default: 
+ return state;
+
+  }
+};
+```
+
+
+* 위의 코드에서 increaseAction과 decreaseAction은 reducer에서 사용되는 action이다. 
+이 action들은 state가 어떤 값으로 업데이트 될지 결정한다. 다음으로 reducer인 countReducer가 있다.
+이는 액션과 초기 상태를 필요로 한다. action.type이 INCREASE일 경우, reducer는 1이 증가한 새로운
+state를 반환한다. 그리고, DECREASE일 경우, 1만큼 감소한 새로운 state를 반환한다. 어떠한 조건도 충족하지 않는다면
+state를 그대로 반환한다.
+
+
+## 
