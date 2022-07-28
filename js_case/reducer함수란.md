@@ -58,7 +58,7 @@ const action = {
 
   * 위의 코드는 유저가 보내는 값을 담고있는 전형적인 payload를 나타낸다. 위의 코드에서 알 수 있듯, 
   action object는 액션의 type과 payload object를 담고 있다. 그것들은 이 특정 action이 실행되기 
-  위한 필수 요소이다.
+  위한 필수 요소이다. 
 
 
 ## reducer를 사용하여 state 업데이트 하기 
@@ -98,4 +98,33 @@ state를 반환한다. 그리고, DECREASE일 경우, 1만큼 감소한 새로�
 state를 그대로 반환한다.
 
 
-## 
+
+## reducer를 사용하여 state업데이트 하기. 스프레드 연산자(The spread operator)
+
+* state는 직접 바꿀 수 없다. state를 생성하거나 업데이트 하기 위해서 Javascript의 스프레드 연산자를 사용할 수 있다. 
+  우리는 state를 직접 바꾸지 않고, 새로운 object를 리턴하는데 그 object가 전달된 원래의 state와 payload를
+  담고 있다.
+
+
+```JS
+const contactAction = {
+  type: 'GET_CONTACT',
+  payload: ['0801234567', '0901234567']
+};
+
+const initialState = {
+  contacts: [],
+  contact: {},
+};
+
+export default function (state = initialState, action) {
+  switch (action.type) {
+    case GET_CONTACTS: 
+      return {
+        ...state,
+        contacts: action.payload,
+    };
+  default: 
+    return state;
+  }
+```
