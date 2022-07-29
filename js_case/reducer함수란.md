@@ -144,10 +144,11 @@ export default function (state = initialState, action) {
 <br />
 
 * 좀더 자세히 이해하기 위해 영화 정보 상세 보기 application을 만들어 보자.
+[movie-detail-finder 예제코드](./movie-detail-finder/)
+[api key 받기](http://www.omdbapi.com/)
 <br />
 
 터미널에서 새로운 react app을 생성한다.
-<br />
 
 ```bash
 $npx create-react-app movie-detail-finder
