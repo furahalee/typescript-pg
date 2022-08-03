@@ -8,5 +8,8 @@ Study Typescript Programming
 #### 01_type_chk 프로젝트 실행
 
 ```bash
-$yarn run build
+$ cd 01_type_chk
+$ yarn add -D @types/node
+$ yarn run build
+$ node ./dist/${디렉토리}/${파일명}
 ```
