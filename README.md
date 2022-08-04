@@ -9,6 +9,7 @@ Study Typescript Programming
 
 ```bash
 $ cd 01_type_chk
+$ yarn
 $ yarn add -D @types/node
 $ yarn run build
 $ node ./dist/${디렉토리}/${파일명}
