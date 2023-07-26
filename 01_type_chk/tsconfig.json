@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "lib": ["es2015"],
-        "module": "CommonJS",
-        "outDir": "dist",
+        "lib": ["es2015"],  //tsc가 코드 실행환경에서 이용할 수 있다고 가정하는 API
+        "module": "CommonJS",   // tsc가 컴파일할 대상 모듈 시스템
+        "outDir": "dist",  // 생성된 자바스크립트 코드를 출력할 디렉터리
         "sourceMap": true,
         "strict": true,
-        "target": "ES2015"
+        "target": "ES2015" // tsc가 코드를 컴파일할 자바스크립트 버전
     },
     "include": [
         "src"
